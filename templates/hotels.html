@@ -94,11 +94,22 @@
             </form>
         </div>
     </div>
-    <div class="row other-hotel-page-features">
-        <div class="btn-group">
-            <button class="btn btn-default">Last Searches</button>
-            <button class="btn btn-default">Quatations</button>
-            <button class="btn btn-default">Bookings</button>
+    <div class="other-hotel-page-features">
+        <div class="row">
+            <div class="btn-group">
+                <button class="btn btn-default">Last Searches</button>
+                <button class="btn btn-default">Quatations</button>
+                <button class="btn btn-default">Bookings</button>
+            </div>
+            <button ng-click='hideShortcuts = !hideShortcuts;'>Minimize</button>
         </div>
+        <div class="row form-group" ng-hide='hideShortcuts'>
+            <div style='text-align: center;'>
+                No results to display for now.
+            </div>
+        </div>
+    </div>
+    <div class="row other-hotel-page-features">
+        <ui-view></ui-view>
     </div>
 </div>

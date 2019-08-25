@@ -35,7 +35,8 @@ app.controller('hotelsController', ['$scope', '$state', 'hotelsService', functio
         $scope.rooms[index].adultCount = value;
     };
     $scope.searchHotels = function() {
-        $state.go('mainpage.hotelsresults');
+        $scope.hideShortcuts = true;
+        $state.go('mainpage.hotels.hotelsresults');
     };
     
     $scope.guestName = hotelsService.guestName;

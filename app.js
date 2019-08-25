@@ -42,7 +42,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
                 }
             }
         })
-        .state('mainpage.hotelsresults', {
+        .state('mainpage.hotels.hotelsresults', {
             url: '/hotelsresults',
             views: {
                 "": {
