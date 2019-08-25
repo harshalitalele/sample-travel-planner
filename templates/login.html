@@ -1,14 +1,16 @@
 <div>
     <div class="btn-group" role="group">
-        <button type="button" class="btn btn-default prelogin-items" ng-repeat="nav in preloginItems"  ng-style="$index+1 < preloginItems.length ? { 'border-right-width': '2px'} : { 'border': 0 }">
+        <button type="button" class="btn btn-default prelogin-items" ng-repeat="nav in preloginItems" ng-style="$index+1 < preloginItems.length ? { 'border-right-width': '2px'} : { 'border': 0 }">
             {{nav.title}}
         </button>
     </div>
     <div class="btn-group login-options" role="group">
-        <button type="button" class="btn btn-default prelogin-items">
+        <button type="button" class="btn btn-default prelogin-items"
+                style='border-width: 0 2px 0 0'>
             Login
         </button>
-        <button type="button" class="btn btn-default prelogin-items">
+        <button type="button" class="btn btn-default prelogin-items"
+                style='border: 0'>
             Registere here!
         </button>
     </div>
