@@ -72,12 +72,12 @@ app.factory('hotelsService', ['httpService',
             getHotelSearchCriteria: function() {
                 var data = {
                     destination: 'Bali',
-                    checkin: '2017-03-02T18:30:00.000Z',
+                    checkin: new Date('2017-03-02T18:30:00.000Z'),
                     checkindisp: function() {
                         var date = new Date(this.checkin);
                         return date.getDate() + "-" + date.getMonth() + "-" + date.getFullYear();
                     },
-                    checkout: '2017-03-06T18:30:00.000Z',
+                    checkout: new Date('2017-03-06T18:30:00.000Z'),
                     checkoutdisp: function() {
                         var date = new Date(this.checkout);
                         return date.getDate() + "-" + date.getMonth() + "-" + date.getFullYear();
