@@ -1,6 +1,6 @@
 <div>
     <div class="btn-group" role="group">
-        <button type="button" class="btn btn-default prelogin-items" ng-repeat="nav in preloginItems">
+        <button type="button" class="btn btn-default prelogin-items" ng-repeat="nav in preloginItems"  ng-style="$index+1 < preloginItems.length ? { 'border-right-width': '2px'} : { 'border': 0 }">
             {{nav.title}}
         </button>
     </div>
