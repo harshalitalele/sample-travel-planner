@@ -42,4 +42,4 @@ MAIN_MENU = [{
     title: 'MEALS',
     state: ''
 }];
-LOGIN_IMG_URLS = ['/../imgs/Image_1.JPG', '/../imgs/Image_2.JPG', '/../imgs/Image_3.JPG'];
+LOGIN_IMG_URLS = ['/sample-website/imgs/Image_1.JPG', '/sample-website/imgs/Image_2.JPG', '/sample-website/imgs/Image_3.JPG'];
