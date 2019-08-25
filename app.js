@@ -77,6 +77,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
                 }
             }
         })
+        .state("otherwise", { url : '/login'})
 });
 
 app.controller('mainCtrl', ['$scope',

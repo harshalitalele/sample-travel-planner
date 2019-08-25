@@ -35,20 +35,20 @@
             </div>
             <form class="form-horizontal login-inner-form ">
                 <div class="form-group">
-                    <div for="AgentCode" class="col-md-3 control-label">Agent Code:</div>
-                    <div class="col-md-9">
+                    <div for="AgentCode" class="col-md-4 control-label">{{userType}} Code:</div>
+                    <div class="col-md-8">
                         <input type="text" class="form-control" id="agentcode" placeholder="{{userType + ' Code'}}"/>
                     </div>
                 </div>
                 <div class="form-group">
-                    <div for="Username" class="col-md-3 control-label">Username</div>
-                    <div class="col-md-9">
+                    <div for="Username" class="col-md-4 control-label">Username</div>
+                    <div class="col-md-8">
                         <input type="text" class="form-control" id="username" placeholder="{{userType + ' Username'}}"/>
                     </div>
                 </div>
                 <div class="form-group">
-                    <div for="Password" class="col-md-3 control-label">Password</div>
-                    <div class="col-md-9">
+                    <div for="Password" class="col-md-4 control-label">Password</div>
+                    <div class="col-md-8">
                         <input type="password" class="form-control" id="password" placeholder="Password"/>
                     </div>
                 </div>
@@ -70,7 +70,12 @@
                 </div>
                 <div class="form-group">
                     <div class="col-md-3">
-                        <button class="form-control btn-primary" ng-click="authenticateUserAndLogIn()">Log In</button>
+                        <button class="form-control btn-primary" ng-click="authenticateUserAndLogIn(false)">Log In</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-4">
+                        <button class="form-control btn-primary" ng-click="authenticateUserAndLogIn()">Guest Log In</button>
                     </div>
                 </div>
             </form>
