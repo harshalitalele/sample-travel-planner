@@ -65,7 +65,7 @@ app.factory('hotelsService', ['httpService',
                         availablity: "Available",
                         policies: "Non Refundable on cancellation"
                     }],
-                    img: 'imgs/hotel_img3.jpg'
+                    img: 'imgs/hotel_img3.JPG'
                 }];
                 successCB(data);
             },
