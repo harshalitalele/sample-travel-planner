@@ -31,7 +31,7 @@ app.factory('hotelsService', ['httpService',
                         availablity: "On-request",
                         policies: "Non Refundable on cancellation"
                     }],
-                    img: '../imgs/hotel_img1.jpg'
+                    img: 'imgs/hotel_img1.jpg'
                 }, {
                     hname: 'Risata Resort',
                     ratings: 3,
@@ -48,7 +48,7 @@ app.factory('hotelsService', ['httpService',
                         availablity: "On-request",
                         policies: "Non Refundable on cancellation"
                     }],
-                    img: '../imgs/hotel_img2.jpg'
+                    img: 'imgs/hotel_img2.jpg'
                 }, {
                     hname: 'Bali Dream Villa',
                     ratings: 3,
@@ -65,7 +65,7 @@ app.factory('hotelsService', ['httpService',
                         availablity: "Available",
                         policies: "Non Refundable on cancellation"
                     }],
-                    img: '../imgs/hotel_img3.jpg'
+                    img: 'imgs/hotel_img3.jpg'
                 }];
                 successCB(data);
             },
@@ -93,7 +93,7 @@ app.factory('hotelsService', ['httpService',
                     },
                     loc: [0, 0],
                     mapurl: function() {
-                        return "../imgs/bali_map.JPG";
+                        return "imgs/bali_map.JPG";
                     },
                     hotel: "Bali Dynasty",
                     roomtype: "Deluxe",
