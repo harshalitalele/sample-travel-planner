@@ -1,0 +1,119 @@
+<div>
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default prelogin-items" ng-repeat="nav in preloginItems">
+            {{nav.title}}
+        </button>
+    </div>
+    <div class="btn-group login-options" role="group">
+        <button type="button" class="btn btn-default prelogin-items">
+            Login
+        </button>
+        <button type="button" class="btn btn-default prelogin-items">
+            Registere here!
+        </button>
+    </div>
+    <div class="row row-space">
+        <div class="col-md-7 login-page-box ad-banner">
+            <span class="glyphicon glyphicon-chevron-left img-scroll-left" ng-click="imgIndex=(imgIndex+2)%3;"></span>
+            <img ng-src="{{imageURLs[imgIndex]}}" height="350" width="665"/>
+            <span class="glyphicon glyphicon-chevron-right img-scroll-right" ng-click="imgIndex=(imgIndex+1)%3;"></span>
+        </div>
+        <div class="col-md-5 row login-page-box login-outer-form">
+            <div class="row-space" role="group">
+                <div class="col-md-6 login-tab-title" 
+                     ng-class="{'selectedUserType' : userType == 'Agent'}"
+                     ng-click="selectUserType('Agent')">
+                    Agent Login
+                </div>
+                <div class="col-md-6 login-tab-title" 
+                     ng-class="{'selectedUserType' : userType == 'Supplier'}"
+                     ng-click="selectUserType('Supplier')">
+                    Supplier Login
+                </div>
+            </div>
+            <form class="form-horizontal login-inner-form ">
+                <div class="form-group">
+                    <div for="AgentCode" class="col-md-3 control-label">Agent Code:</div>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" id="agentcode" placeholder="{{userType + ' Code'}}"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div for="Username" class="col-md-3 control-label">Username</div>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" id="username" placeholder="{{userType + ' Username'}}"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div for="Password" class="col-md-3 control-label">Password</div>
+                    <div class="col-md-9">
+                        <input type="password" class="form-control" id="password" placeholder="Password"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"/>Remember me
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="checkbox">
+                            <label>
+                                <a>Forgot Password?</a>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <button class="form-control btn-primary" ng-click="authenticateUserAndLogIn()">Log In</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row row-space ad-banner-listing">
+        <div class="oval" ng-class="{'filled-oval' : i == imgIndex}" ng-repeat="i in [0,1,2]"></div>
+    </div>
+    <div class="row row-space">
+        <img class="site-map" src="../imgs/sitemap.jpg" alt="Site Map"/>
+    </div>
+    <div class="row row-space">
+        <div class="col-md-9"></div>
+        <div class="col-md-3 row affiliation-title">
+            affiliations
+        </div>
+    </div>
+    <div class="row login-footer">
+        <div class="col-md-7 row-padding-0">
+            <div class="col-md-4 features-btn">
+                <div>250+ </div>
+                <div>
+                    Hotels and Apt in Bali
+                </div>
+            </div>
+            <div class="col-md-4 features-btn">
+                <div>500+ </div>
+                <div>Sightseeing and Transfers</div>
+            </div>
+            <div class="col-md-4 features-btn">
+                <div>25 years </div>
+                <div>of Travel Experience</div>
+            </div>
+        </div>
+        <div class="col-md-5 row-padding-0" role="group">
+            <div class="col-md-5"></div>
+            <div class="col-md-2">
+                <img class="logo-img" src="../imgs/Logo_1.png"/>
+            </div>
+            <div class="col-md-2">
+                <img class="logo-img" src="../imgs/Logo_2.png"/>
+            </div>
+            <div class="col-md-3">
+                <img class="logo-img" src="../imgs/Logo_3.png"/>
+            </div>
+        </div>
+    </div>
+</div>

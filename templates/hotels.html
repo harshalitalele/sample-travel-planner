@@ -1,0 +1,104 @@
+<div>
+    <div class="row hotel-search-block">
+        <div class="col-md-12">
+            <div class="hotel-form-header">Welcome Agent</div>
+            <form class="form-horizontal hotel-search-form">
+                <div class="form-group">
+                    <label for="destination" class="col-md-2 control-label">Destination:</label>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="destination" placeholder="Destination" value="Bali">
+                    </div>
+                    <label for="nationality" class="col-md-2 control-label">Guest Nationality:</label>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="nationality" placeholder="Guest Nationality" value="Indian">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="checkin" class="col-md-2 control-label">Check in Date:</label>
+                    <div class="col-md-4">
+                        <input type="date" id="checkin" class="form-control" ng-model="checkin" placeholder="Check in" name="checkin"/>
+                    </div>
+                    <label for="checkout" class="col-md-2 control-label">Check out Date:</label>
+                    <div class="col-md-4">
+                        <input type="date" id="checkout" class="form-control" ng-model="checkout" placeholder="Check out" name="checkout"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="hotelname" class="col-md-2 control-label">Hotel Name:</label>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" id="hotelname" placeholder="Hotel Name if any">
+                    </div>
+                    <label for="starcat" class="col-md-2 control-label">Star Category:</label>
+                    <div class="col-md-4">
+                        <label class="star-cat-option">
+                            <input type=radio name="starcat" value="2" />2
+                        </label>
+                        <label class="star-cat-option">
+                            <input type=radio name="starcat" value="3" />3
+                        </label>
+                        <label class="star-cat-option">
+                            <input type=radio name="starcat" value="4" />4
+                        </label>
+                        <label class="star-cat-option">
+                            <input type=radio name="starcat" value="5" />5
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-8 col-md-2 child-adult-title">Child(ren)</div>
+                    <div class="col-md-2 child-adult-title">Adult(s)</div>
+                </div>
+                <div class="form-group">
+                    <label for="noOfRoom" class="col-md-2 control-label">No of Rooms:</label>
+                    <div class="col-md-4">
+                        <div class="dropdown">
+                            <button class="form-control" id="noofrooms" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{noOfRooms}} Room(s)
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="noofrooms">
+                                <li class="dropdown-items" ng-repeat="room in rooms" ng-click="selectDropdown('noOfRooms', room.no)">{{room.no}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row row-space" ng-repeat="room in rooms.slice(0, noOfRooms)">
+                            <label for="roomno" class="col-md-4 control-label">Room {{room.no}}</label>
+                            <div class="dropdown col-md-4">
+                                <button class="form-control" id="noOfChildren" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    {{room.childCount}}
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="noOfChildren">
+                                    <li class="dropdown-items" ng-repeat="no in childCount" ng-click="selectChildCnt($parent.$index, no)">{{no}}</li>
+                                </ul>
+                            </div>
+                            <div class="dropdown col-md-4">
+                                <button class="form-control" id="noofAdults" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    {{room.adultCount}}
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="noofAdults">
+                                    <li class="dropdown-items" ng-repeat="no in adultCount" ng-click="selectAdultCnt($parent.$index, no)">{{no}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12 center-alignment">
+                        <button class="btn btn-primary disabled">Add more Destination/Hotel</button>
+                        <button type="submit" class="btn btn-primary" ng-click="searchHotels()">Search Hotels</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row other-hotel-page-features">
+        <div class="btn-group">
+            <button class="btn btn-default">Last Searches</button>
+            <button class="btn btn-default">Quatations</button>
+            <button class="btn btn-default">Bookings</button>
+        </div>
+    </div>
+</div>

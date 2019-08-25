@@ -1,0 +1,151 @@
+/*
+ *CSS for packageSummary.html
+ */
+#package-summary .section-container-box {
+    border: 1px solid #ccc;
+    margin: 0px 20px 20px 20px;
+    border-radius: 5px;
+}
+#package-summary .table.package-details td,
+#package-summary .table.package-details th {
+    text-align: center;
+    vertical-align: middle;
+}
+#package-summary .table.package-details td input[type="number"] {
+    width: 50px;
+}
+#package-summary .table.package-cost-summary td input,
+#package-summary .table.package-cost-summary td select {
+    max-width: 200px;
+}
+#package-summary .action-buttons {
+    margin: 0px 5px 0 5px;
+}
+/*Bootstrap Switch*/
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+}
+.switch input {
+    display: none;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22;
+    width: 22;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked+.slider {
+    background-color: #2196F3;
+}
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 25px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/*
+ *Css for reviewPackageSummary.html
+ */
+#package-summary .section-container-box {
+    border: 1px solid #ccc;
+    margin: 0px 20px 20px 20px;
+    border-radius: 5px;
+}
+#package-summary .table.package-details td,
+#package-summary .table.package-details th {
+    text-align: center;
+    vertical-align: middle;
+}
+#package-summary .table.package-details td input[type="number"] {
+    width: 50px;
+}
+#package-summary .table.package-cost-summary td input,
+#package-summary .table.package-cost-summary td select {
+    max-width: 200px;
+}
+#package-summary .action-buttons {
+    margin: 0px 5px 0 5px;
+}
+/*Bootstrap Switch*/
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+}
+.switch input {
+    display: none;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22;
+    width: 22;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked+.slider {
+    background-color: #2196F3;
+}
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 25px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}

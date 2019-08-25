@@ -1,0 +1,183 @@
+.itenary-box {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+.itenary-box .control-label,.itenary-box .value-label {
+    padding: 0px;
+    width: 13%;
+    margin-left: 10px;
+}
+.padding-bottom-row {
+    padding-bottom: 10px;
+}
+.page-section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.iternary-list-item-info-icon {
+    cursor: pointer;
+}
+#itenary-package-summary-btn {
+    margin-top: 20px;
+}
+.bottom-divider {
+    border-bottom: 1px solid #ccc;
+}
+.bottom-divider-selected-itenary {
+    border-bottom: 1px solid #444;
+    margin-bottom: 5px;
+}
+.right-divider {
+    border-right: 1px solid #ccc;
+}
+/* dragular-specific example page styles */
+
+.wrapper {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+.containerVertical {
+    border-radius: 5px;
+    display: table-cell;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 50%;
+}
+.containerHorizontal {
+    border-radius: 5px;
+    display: table-row;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.containerHorizontal div.shaded-tile {
+    border-spacing: 5px;
+    display: table-cell;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 0.4s ease-in-out;
+    cursor: move;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+.width25 {
+    width: 25%;
+}
+.containerVertical:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.containerVertical:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.containerVertical pre {
+    border: 0;
+    background-color: transparent;
+}
+label b {
+    color: darkorange;
+}
+/*
+ * note that styling gu-mirror directly is a bad practice because it's too generic.
+ * you're better off giving the draggable elements a unique class and styling that directly!
+ */
+
+.containerVertical div.shaded-tile.dropzone-tile {
+    min-height: 50px;
+}
+.containerVertical div.shaded-tile,
+.gu-mirror {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 0.4s ease-in-out;
+    cursor: move;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+.gu-unselectable {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+.containerVertical .ex-moved {
+    background-color: #e74c3c;
+}
+.handle {
+    padding: 0 5px;
+    margin-right: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: move;
+}
+.custom-green-mirror {
+    background-color: #56AB1C;
+    margin: 10px;
+    padding: 10px;
+    cursor: move;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+    opacity: 0.8;
+    position: fixed !important;
+    margin: 0 !important;
+    z-index: 9999 !important;
+}
+.containerVertical.width25.gu-over-active.gu-over-accept {
+    background-color: green !important;
+}
+.containerVertical.width25.gu-over-active.gu-over-decline {
+    background-color: red !important;
+}
+pre.gu-over-active.gu-over-decline {
+    background-color: yellow !important;
+}
+div.limitBox {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+.cursorDefault {
+    cursor: default !important;
+}
+/*Scroll CSS*/
+
+.scrollingDrag {
+    width: 100%;
+    display: inline-block;
+}
+.scrollingDragInner {
+    max-height: 400px;
+    overflow-y: auto;
+}
+#itenary-target-list-container.scrollingDragInner {
+    height: 444px;
+    max-height: 444px;
+}
+#rightTopBar,
+#rightBottomBar,
+#leftTopBar,
+#leftBottomBar {
+    background: transparent;
+    position: relative;
+    height: 20px;
+}
+#rightTopBar,
+#leftTopBar {
+    top: 10px;
+}
+#rightBottomBar,
+#leftBottomBar {
+    bottom: 10px;
+}
+div.scrollBar {
+    /*background: yellow;*/
+    text-align: center;
+    padding: 1px;
+}
+.containerVertical:nth-child(even) {
+    background-color: white;
+}
+.innermost-tile {
+    background-color: white !important;
+}

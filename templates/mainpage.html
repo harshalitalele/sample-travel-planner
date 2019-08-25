@@ -1,0 +1,22 @@
+<div>
+    <div class="btn-group row-space user-option" role="group">
+        <button type="button" class="btn btn-default" ng-repeat="userOption in loginUserMenu">
+            {{userOption.title}}
+        </button>
+    </div>
+    <div>
+        <div class="toolbar">
+            <div class="main-list">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default main-menu-items"
+                            ng-repeat="menu in mainmenu"  
+                            ng-class="{'selected' : selectedMenu == menu.title}"
+                            ng-click="navigateToAndSelect(menu)">
+                        {{menu.title}}
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="sub-items" ui-view></div>
+    </div>
+</div>

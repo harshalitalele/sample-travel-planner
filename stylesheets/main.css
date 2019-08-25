@@ -1,0 +1,33 @@
+.header {
+    height: 70px;
+    font-size: 26px;
+    background-color: gold; /*aliceblue*/
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.row-space {
+    margin-bottom: 10px;
+}
+.dropdown-items:hover {
+    cursor: pointer;
+}
+.pre-footer {
+    margin-bottom: 50px;
+}
+.footer {
+    position: relative;
+    bottom: 0px;
+}
+.footer-bar {
+    height: 10px;
+    background-color: orange;
+}
+.footer-content {
+    float: right;
+    padding: 10px;
+}

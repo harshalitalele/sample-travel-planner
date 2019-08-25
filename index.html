@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <!--External Libraries-->
+    <script src="libs/jquery-3.1.0.min.js"></script>
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-ui-router.min.js"></script>
+    <script src="libs/bootstrap.min.js"></script>
+    <script src='bower_components/dragular/dist/dragular.js'></script>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap.min.css">
+    <link href='bower_components/dragular/dist/dragular.min.css' rel='stylesheet' type='text/css'/>
+    
+    <!--External Libraries-->
+
+    <!--Internal files-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/login.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/mainpage.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/hotels.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/packagesummary.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/itenery.css">
+
+    <script src="constants.js"></script>
+    <script src="app.js"></script>
+    <script src="services/httpService.js"></script>
+    <script src="services/hotelsService.js"></script>
+    <script src="services/sightseeingService.js"></script>
+    <script src="controllers/loginController.js"></script>
+    <script src="controllers/mainpageController.js"></script>
+    <script src="controllers/hotelsController.js"></script>
+    <script src="controllers/hotelResultsController.js"></script>
+    <script src="controllers/itenaryController.js"></script>
+    <script src="controllers/packageSummaryController.js"></script>
+    <!--Internal files-->
+</head>
+
+<body ng-app="travelapp" class="container">
+    <div ng-controller="mainCtrl">
+        <div class="header">
+            Scenic Tours & Travels &nbsp;<sub>- Your Bali Travel Partner</sub>
+        </div>
+        <div ui-view class="pre-footer"></div>
+        <div class="row footer">
+            <div class="row footer-bar">
+            </div>
+            <div class="row footer-content">
+                All Rights Reserved
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

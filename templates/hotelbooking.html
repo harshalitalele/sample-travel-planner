@@ -1,0 +1,95 @@
+<style>
+    .booking-box {
+        padding: 15px;
+    }
+    .booking-title {
+        font-size: 25px;
+    }
+    .booking-cancel {
+        color: red;
+    }
+    .booking-table td, th{
+        margin-right: 10px;
+    }
+    .booking-checkbox {
+        margin-right: 5px;
+    }
+</style>
+<div class="booking-box">
+    <div class="booking-title row-space">
+        Bali Dynasty, Bali
+    </div>
+    <div class="row-space">
+        Your Search: 1 room(s) for Fri 3 Mar 2017 to Tue 7 Mar 2017 (4 nights)
+    </div>
+    <div class="row-space">
+        Room1 - Deluxe room + Free Wifi - Room only
+    </div>
+    <div class="row-space">
+        Guest Details:
+    </div>
+    <table class="booking-table table">
+        <tr class="row-space">
+            <th></th>
+            <th>Title</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        <tr class="row-space">
+            <td>
+                Adult 1:
+            </td>
+            <td>
+                <input type="text" value="Mr.">
+            </td>
+            <td>
+                <input type="text" value="John">
+            </td>
+            <td>
+                <input type="text" value="Doe">
+            </td>
+        </tr>
+        <tr class="row-space">
+            <td>
+                Adult 2:
+            </td>
+            <td>
+                <input type="text" value="Mr.">
+            </td>
+            <td>
+                <input type="text" value="Jack">
+            </td>
+            <td>
+                <input type="text" value="Grey">
+            </td>
+        </tr>
+    </table>
+    <div class="row-space">
+        <label class="booking-title">
+            Essential Information:
+        </label>
+        <p>
+            Please note that accompanied child check-in age should be minimum 21 years old. No ammendments or name changes can be made to this booking made once it is confirmed.
+        </p>
+    </div>
+    <div class="row-space">
+        <label><input class="booking-checkbox" type="checkbox">I accept the Essential Information for this booking.</label>
+    </div>
+    <div class="row-space booking-cancel">
+        <div class="booking-title">Cancellation Policy:</div> 
+        *** CANCELLATION CHARGE APPLIES IMMEDIATELY *** 
+        <br/>
+        This is a fully non refundable booking. No cancellation, ammendments or name changes can be made to this booking once it is confirmed.
+    </div>
+    <div>
+        <button class="btn btn-primary" disabled="disabled">
+            Select to next Hotel/Destination
+        </button>
+        <button class="btn btn-primary " disabled="disabled">
+            Proceed to Checkout
+        </button>
+        <button class="btn btn-primary" ng-click="navigateToAndSelect(mainmenu[1])">
+            Proceed to Sightseeing
+        </button>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+.user-option {
+    position: absolute;
+    top: 29px;
+    right: 115px;
+}
+.user-option .btn {
+    border: 0px;
+    border-radius: 0px;
+    background-color: transparent;
+}
+.toolbar {
+    width: 100%;
+    max-width: 1600px;
+}
+.main-menu-items {
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    border: 0px;
+    padding: 17px;
+}
+.main-menu-items:active {
+    background-color: black;
+    color: white;
+}
+.main-menu-items:focus {
+    background-color: black;
+    color: white;
+}
+.sub-items {
+    border: 1px solid black;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.selected {
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,100 @@
+.prelogin-items {
+    border: 0px;
+    border-radius: 0px;
+    font-size: 16px;
+    padding: 15px;
+}
+.login-options {
+    float: right;
+}
+.login-tab-title {
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.img-scroll-left {
+    position: relative;
+    top: 50%;
+    left: 2%;
+    cursor: pointer;
+    height: 0;
+    font-size: 20px;
+}
+.img-scroll-right {
+    position: relative;
+    top: -50%;
+    left: 98%;
+    cursor: pointer;
+    font-size: 20px;
+    height: 0px;
+}
+.ad-banner {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.filled-oval {
+    background-color: white;
+}
+.oval {
+    text-align: center;
+    margin-left: 10px;
+    float: left;
+    width: 20px;
+    height: 20px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.ad-banner-listing {
+    position: relative;
+    top: -60px;
+    right: -25%;
+    width: 100px;
+    height: 0px;
+}
+.login-header {
+    padding: 0px;
+    font-size: 20px;
+}
+.login-page-box {
+    height: 350px;
+    margin-bottom: 20px;
+}
+.login-outer-form {
+    padding: 30px 20px 20px 20px;
+    float: right;
+    margin-right: 0px;
+    background-color:rgba(0, 0, 0, 0.05);
+}
+.login-inner-form {
+    padding: 5px;
+}
+.site-map {
+    width: 84%;
+}
+.login-title a {
+    color: white;
+}
+.selectedUserType {
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.1);
+}
+.affiliation-title {
+    text-align: center;
+}
+.features-btn {
+    font-size: 16px;
+    padding: 15px;
+    text-align: center;
+}
+.logo-img {
+    height: 65px;
+    padding: 15px;
+}
+.login-footer {
+    background-color: #f8f8f8;
+}
+.row-padding-0 {
+    padding: 0px;
+}

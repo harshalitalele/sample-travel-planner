@@ -1,0 +1,116 @@
+<div>
+    <style>
+        .padding-0 {
+            padding: 0px;
+        }
+    </style>
+    <div class="row row-space hotel-criteria itenary-box">
+        <div class="row">
+            <label class="control-label">Hotel selected:</label>            
+            <label class="control-label">Room Type:</label>            
+            <label class="control-label">Check in:</label>            
+            <label class="control-label">Check out:</label>            
+            <label class="control-label">Nights:</label>            
+            <label class="control-label">Avg Per Night:</label>            
+            <label class="control-label">Total Cost:</label>            
+        </div>
+        <div class="row">
+            <label class="value-label">{{criteria.hotel}}</label>
+            <label class="value-label">{{criteria.roomtype}}</label>
+            <label class="value-label">{{criteria.checkindisp()}}</label>
+            <label class="value-label">{{criteria.checkoutdisp()}}</label>
+            <label class="value-label">{{criteria.nights()}} Nights</label>
+            <label class="value-label">$ {{criteria.avgprice}}</label>
+            <label class="value-label">$ {{criteria.nights()*criteria.avgprice}}</label>
+        </div>
+    </div>
+    <hr/>
+    <div class="row page-section bottom-divider">
+        <div class="col-sm-6 right-divider">
+            <div class="row padding-bottom-row">
+                <div class="col-sm-12">
+                    <div class="col-md-3 padding-0">
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Location
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a>Bali</a>
+                                </li>
+                                <li><a>Singapore</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-9 btn-group">
+                        <button class="btn btn-default">Transfer</button>
+                        <button class="btn btn-primary">Sightseeing</button>
+                        <button class="btn btn-default">Meals</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row padding-bottom-row">
+                <div class="col-sm-12">
+                    <div class="input-group">
+                        <input ng-model="itenarySearch" type="text" class="form-control" placeholder="Search" id="inputGroup" />
+                        <span class="input-group-addon" ng-click="filterItenary()">
+                            <i class="fa fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-sm-12 containerVertical scrollingDrag">
+                    <div class="scrollBar" id="leftTopBar"></div>
+                    <div id="itenary-source-list-container" class='scrollingDragInner' dragular="dragularOptions">
+                        <div class="shaded-tile" ng-repeat="item in iternaryFilteredSourceList track by item.id">
+                            <div class="row">
+                                <div class="col-sm-12"><span class="glyphicon glyphicon-info-sign pull-right iternary-list-item-info-icon"></span><span ng-bind="getItenaryTileHeading(item)"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scrollBar" id="leftBottomBar"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-sm-6">
+            <div class="row padding-bottom-row">
+                <div class="col-sm-12">
+                    <h4>Day wise Itinarary planner:</h4>
+                </div>
+            </div>
+            <div class='containerVertical scrollingDrag'>
+                <div class="scrollBar" id="rightTopBar"></div>
+                <div id="itenary-target-list-container" class="scrollingDragInner">
+                    <div class="shaded-tile" ng-repeat="day in itenaryData.days">
+                        <h4>Day {{day.day}}</h4>
+                        <div class="shaded-tile dropzone-tile" dragular='{"containersModel":"day.data","classes":{"mirror":"custom-green-mirror"},"nameSpace":"common",removeOnSpill: true,accepts: accepts}'>
+                            <div class="shaded-tile innermost-tile" ng-repeat="item in day.data">
+                                <div class="row bottom-divider-selected-itenary">
+                                    <div class="col-sm-12">
+                                        <span ng-bind="getItenaryTileHeading(item)"></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span ng-bind="item.content"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scrollBar" id="rightBottomBar"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row page-section">
+        <div class="col-sm-12">
+            <a ui-sref="mainpage.packageSummary" id="itenary-package-summary-btn" class="btn btn-primary pull-right">Go to Package Summary</a>
+        </div>
+    </div>
+</div>

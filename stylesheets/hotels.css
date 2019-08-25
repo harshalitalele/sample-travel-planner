@@ -1,0 +1,197 @@
+.hotel-form-header {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 10px 20px 10px;
+}
+.search-criteria-header {
+    background-color: white;/*rgba(0,0,0,0.05);*/
+    border-radius: 5px;
+}
+.reduce-icons {
+    float: right;
+}
+.hotel-result {
+    border: solid 1px white;
+    padding: 20px;
+}
+.hotel-search-form {
+    margin: 10px;
+}
+.dropdown-items {
+    padding: 5px;
+    text-align: center;
+}
+.child-adult-title {
+    text-align: center;
+    font-weight: bold;
+}
+.value-label {
+    font-weight: normal;
+}
+.star-cat-option {
+    margin-right: 25px;
+}
+.hotel-search-block {
+    background-image: url(../imgs/hotel_search.jpg);
+    background-repeat: no-repeat;
+    color: white;
+}
+.form-group .control-label {
+    text-align: left;
+}
+ul li {
+    color: black;
+}
+.other-hotel-page-features {
+    margin-top: 20px;
+    border-top: 1px solid black;
+    padding: 20px;
+}
+.center-alignment {
+    text-align: center;
+}
+
+/*
+ * Below are the classes for Hotel Results page
+ */
+.back-icon {
+    font-size: 30px;
+    margin: 10px 5px 10px 40px
+}
+.searched-for {
+    margin: 0px 35px 0px 15px;
+}
+.hotel-criteria {
+    border: solid 1px black;
+    border-radius: 5px;
+    margin: 0px 15px 50px 15px;
+    padding: 5px;
+    background-color: white;
+}
+.multi-dest-title {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 30px 0px 20px 10px;
+    border-radius: 5px;
+}
+.multi-dest-map {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 30px 0px 20px 10px;
+    cursor: pointer;
+    margin-left: 50%;
+    border-radius: 5px;
+}
+.dest-map {
+    height: 200px;
+    width: 300px;
+    float: right;
+    position: absolute;
+    left: 70%;
+    z-index: 1999;
+}
+.showing-map {
+    background-color: gray;
+}
+.hotel-listing-box {
+    background-color: lightgray;
+}
+.collapsable-icon {
+    float: right;
+    top: -25px;
+}
+.modify-filter-block {
+    background-color: gray;
+}
+.modify-search-box {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.h-search-modify-title {
+    padding: 10px;
+    font-size: 18px;
+}
+.h-search-filter-title {
+    padding: 10px;
+    font-size: 18px;
+}
+.filter-box {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.rating-filter-star {
+    font-size: 20px;
+    margin: 3px 10px 30px 15px;
+}
+.rating-filter-num {
+    position: absolute;    
+}
+.filter-font {
+    font-size: 12px;
+}
+.table {
+    font-size: 15px;
+}
+.hotel-check {
+    font-size: 20px;
+}
+.h-img {
+    height: 210px;
+    width: 210px;
+}
+.horizontal-line {
+    color: white;
+}
+.own-rating {
+    font-size: 16px;
+}
+.trip-adv-rating {
+    float: right;
+    font-size: 16px;
+}
+.hotel-location {
+    padding: 0px;
+}
+.hotel-details {
+    margin-left: 23px;
+    border: 1px solid black;
+    padding: 3px;
+    width: auto;
+}
+.hotel-desc {
+    background-color: white;
+    border-radius: 5px;
+    height: 210;
+    overflow: auto;
+}
+.hotel-desc .media-body {
+    padding: 10px;
+}
+.room {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.room td, th {
+    padding: 5px 16px 5px 16px;
+    border: 1px solid;
+    text-align: center;
+}
+.available-btn {
+    padding: 2px 10px 2px 10px;
+    background-color: green;
+}
+.on-request-btn {
+    padding: 2px 10px 2px 10px;
+    background-color: red;
+}
+.room-policies {
+    position: absolute;
+    border: 2px solid;
+    background-color: gray;
+    border-radius: 5px;
+    color: white;
+    z-index: 1999;
+    font-size: 14px;
+}
