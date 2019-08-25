@@ -37,4 +37,6 @@ app.controller('hotelsController', ['$scope', '$state', 'hotelsService', functio
     $scope.searchHotels = function() {
         $state.go('mainpage.hotelsresults');
     };
+    
+    $scope.guestName = hotelsService.guestName;
 }]);
