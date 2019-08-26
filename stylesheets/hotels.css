@@ -97,7 +97,9 @@ ul li {
     top: -25px;
 }
 .modify-filter-block {
-    background-color: gray;
+    background-color: #eee;
+    padding-bottom: 15px;
+    border-radius: 5px;
 }
 .modify-search-box {
     background-color: white;

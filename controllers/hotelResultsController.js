@@ -23,6 +23,8 @@ app.controller('hotelResultsController', ['$scope', 'hotelsService', '$state',
             $scope[model] = stars;
         };
         $scope.readmore = 1;
+        $scope.modifyCollapsed = true;
+        $scope.filterCollapsed = true;
         $scope.loadMore = function(num) {
             $scope.readmore = num;
         };
