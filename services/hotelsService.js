@@ -74,13 +74,13 @@ app.factory('hotelsService', ['httpService',
                     destination: 'Bali',
                     checkin: new Date('2017-03-02T18:30:00.000Z'),
                     checkindisp: function() {
-                        var date = new Date(this.checkin);
-                        return date.getDate() + "-" + date.getMonth() + "-" + date.getFullYear();
+                        var date = this.checkin;
+                        return date.getDate() + "-" + eval(date.getMonth()+1) + "-" + date.getFullYear();
                     },
                     checkout: new Date('2017-03-06T18:30:00.000Z'),
                     checkoutdisp: function() {
                         var date = new Date(this.checkout);
-                        return date.getDate() + "-" + date.getMonth() + "-" + date.getFullYear();
+                        return date.getDate() + "-" + eval(date.getMonth()+1) + "-" + date.getFullYear();
                     },
                     noOfAdult: 2,
                     noOfChild: 1,

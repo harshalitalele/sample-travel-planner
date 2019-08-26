@@ -21,6 +21,8 @@ app.controller('hotelsController', ['$scope', '$state', 'hotelsService', functio
         childCount: 0,
         adultCount: 0
     }];
+    $scope.checkin = new Date('2017-03-02T18:30:00.000Z');
+    $scope.checkout = new Date('2017-03-06T18:30:00.000Z');
     $scope.childCount = [1, 2, 3, 4];
     $scope.adultCount = [1, 2, 3, 4];
     $scope.noOfRooms = 1;

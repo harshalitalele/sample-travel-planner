@@ -1,15 +1,12 @@
 <div class="row row-space hotel-listing-box">
-    <div class="row">
-        <span class="glyphicon glyphicon-circle-arrow-left back-icon" ng-click="goBack()"></span>
-    </div>
     <div class="row row-space hotel-criteria">
         <div class="row">
             <label class="control-label">You searched for:</label>
             <label for="destination" class="value-label searched-for">{{criteria.destination}}</label>
             <label class="control-label">Check in:</label>
-            <label for="checkin" class="value-label searched-for">{{criteria.checkin}}</label>
+            <label for="checkin" class="value-label searched-for">{{criteria.checkindisp()}}</label>
             <label class="control-label">Check out:</label>
-            <label for="checkin" class="value-label searched-for">{{criteria.checkout}}</label>
+            <label for="checkin" class="value-label searched-for">{{criteria.checkoutdisp()}}</label>
             <label class="control-label">Children:</label>
             <label for="noOfChild" class="value-label searched-for">{{criteria.noOfChild}}</label>
             <label class="control-label">Adults:</label>
