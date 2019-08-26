@@ -65,10 +65,10 @@
     width: 25%;
 }
 .containerVertical:nth-child(odd) {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #eee;
 }
 .containerVertical:nth-child(even) {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #eee;
 }
 .containerVertical pre {
     border: 0;

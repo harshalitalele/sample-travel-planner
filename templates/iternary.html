@@ -86,7 +86,7 @@
             <div class='containerVertical scrollingDrag'>
                 <div class="scrollBar" id="rightTopBar"></div>
                 <div id="itenary-target-list-container" class="scrollingDragInner">
-                    <div class="shaded-tile" ng-repeat="day in itenaryData.days">
+                    <div class="shaded-tile" ng-repeat="day in itenaryData.days" style="background-color: #eee;">
                         <h4>Day {{day.day}}</h4>
                         <div class="shaded-tile dropzone-tile" dragular='{"containersModel":"day.data","classes":{"mirror":"custom-green-mirror"},"nameSpace":"common",removeOnSpill: true,accepts: accepts}'>
                             <div class="shaded-tile innermost-tile" ng-repeat="item in day.data">
