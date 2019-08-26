@@ -63,7 +63,7 @@ ul li {
 .hotel-criteria {
     border-radius: 5px;
     margin: 0;
-    padding: 5px;
+    padding: 0px;
     background-color: white;
 }
 .multi-dest-title {
@@ -73,11 +73,10 @@ ul li {
     border-radius: 5px;
 }
 .multi-dest-map {
-    border: 2px solid gray;
+    border: 1px solid gray;
     padding: 10px;
     margin: 0px 0px 20px 0px;
     cursor: pointer;
-    margin-left: 30.5%;
     border-radius: 5px;
 }
 .dest-map {

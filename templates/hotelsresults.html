@@ -1,8 +1,14 @@
 <div class="row row-space hotel-listing-box">
     <div class="row row-space hotel-criteria">
-        <div class="row">
+        <div class="row" style="margin-bottom: 20px;">
             <label class="control-label">You searched for:</label>
             <label for="destination" class="value-label searched-for">{{criteria.destination}}</label>
+            <a href="#" class="btn btn-default btn-lg" 
+               ng-mouseover="showMap = true" ng-mouseout="showMap = false" ng-class="{'showing-map': showMap}">
+                <span class="glyphicon glyphicon-map-marker">
+                    <img ng-if="showMap" class="dest-map" ng-src="{{criteria.mapurl()}}" alt="map not available" />
+                </span>
+            </a>
             <label class="control-label">Check in:</label>
             <label for="checkin" class="value-label searched-for">{{criteria.checkindisp()}}</label>
             <label class="control-label">Check out:</label>
@@ -13,13 +19,6 @@
             <label for="noOfAdult" class="value-label searched-for">{{criteria.noOfAdult}}</label>
             <label class="control-label">Nights:</label>
             <label for="checkin" class="value-label searched-for">{{criteria.nights()}} Nights</label>
-        </div>
-        <div class="col-md-2 multi-dest-title">
-            <b>Hotel / Destination 1:</b>
-        </div>
-        <div class="col-md-2 multi-dest-map" ng-mouseover="showMap = true" ng-mouseout="showMap = false" ng-class="{'showing-map': showMap}">
-            <b>Map view</b>
-            <img ng-if="showMap" class="dest-map" ng-src="{{criteria.mapurl()}}" alt="map not available" />
         </div>
     </div>
     <div class="row row-space">
