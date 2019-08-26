@@ -91,9 +91,6 @@
                         <div class="col-md-3 hotel-location">
                             {{hotel.location.name}}
                         </div>
-                        <div class=" col-md-3 hotel-details">
-                            Details
-                        </div>
                     </div>
                     <div>
                         <div ng-if="hotel.rooms.length > 0">
@@ -103,7 +100,7 @@
                                     <th>Meal Plan</th>
                                     <th>Avg Price</th>
                                     <th>Total</th>
-                                    <th></th>
+                                    <th>Select Option</th>
                                     <th></th>
                                 </tr>
                                 <tr ng-repeat="room in hotel.rooms.slice(0, readmore)">

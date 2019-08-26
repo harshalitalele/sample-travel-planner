@@ -121,7 +121,7 @@ ul li {
 }
 .rating-filter-star {
     font-size: 20px;
-    margin: 3px 10px 30px 15px;
+    margin: 3px 10px 30px 5px;
 }
 .rating-filter-num {
     position: absolute;    
