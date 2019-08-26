@@ -11,7 +11,8 @@
                     <button type="button" class="btn btn-default main-menu-items"
                             ng-repeat="menu in mainmenu"  
                             ng-class="{'selected' : selectedMenu == menu.title}"
-                            ng-click="navigateToAndSelect(menu)">
+                            ng-click="navigateToAndSelect(menu)"
+                            ng-disabled="$index > 1">
                         {{menu.title}}
                     </button>
                 </div>
