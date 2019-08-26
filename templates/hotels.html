@@ -101,7 +101,14 @@
                 <button class="btn btn-default">Quatations</button>
                 <button class="btn btn-default">Bookings</button>
             </div>
-            <button ng-click='hideShortcuts = !hideShortcuts;'>Minimize</button>
+            <button ng-click='hideShortcuts = !hideShortcuts;' 
+                    ng-hide='hideShortcuts'>
+                <span class="glyphicon glyphicon-minus"></span>
+            </button>
+            <button ng-click='hideShortcuts = !hideShortcuts;' 
+                    ng-show='hideShortcuts'>
+                <span class="glyphicon glyphicon-plus"></span>
+            </button>
         </div>
         <div class="row form-group" ng-hide='hideShortcuts'>
             <div style='text-align: center;'>
